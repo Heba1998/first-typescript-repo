@@ -89,36 +89,6 @@ button.button {
   }
 }
 
-div.card-content {
-  background-color: $shade-light;
-  color: #999;
-  .card-name {
-    font-size: 24px;
-    color: #000;
-    padding-right: 20px;
-  }
-  .card-id {
-    font-size: 20px;
-    padding-right: 20px;
-  }
-  .card-icon {
-    padding-right: 20px;
-  }
-  background-color: $shade-light;
-}
-.card {
-  margin-bottom: 1em;
-  width: 400px;
-}
-
-p.card-header-title {
-  background-color: $primary;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #fff;
-  display: block;
-  padding-left: 24px;
-}
 
 .navbar {
   margin-right: -6px;
@@ -135,18 +105,7 @@ nav .field select {
   width: 150px;
 }
 
-.modal-card {
-  width: 400px;
-}
-.modal-card-foot button {
-  display: inline-block;
-  width: 80px;
-}
 
-.modal-card-head,
-.modal-card-body {
-  text-align: center;
-}
 
 .message-body {
   white-space: pre;
