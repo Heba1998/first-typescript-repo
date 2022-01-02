@@ -27,3 +27,6 @@ enum ProductType {
 
 type ProductTypeList = 'SPORTING' | 'HOME';
 let p: ProductTypeList = 'SPORTING';
+
+
+

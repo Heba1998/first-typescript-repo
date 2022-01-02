@@ -82,9 +82,9 @@ function runTheLearningSamples() {
     const sum: number = x + y;
     return sum;
   };
-
-  console.log(`${prefix} function expression`);
-  console.log(addNumbersExpression(7, 11));
+  
+    console.log(`${prefix} function expression`);
+    console.log(addNumbersExpression(7, 11));
 
   // Return Scalar
 
