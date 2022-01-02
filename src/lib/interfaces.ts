@@ -28,5 +28,9 @@ enum ProductType {
 type ProductTypeList = 'SPORTING' | 'HOME';
 let p: ProductTypeList = 'SPORTING';
 
+////////////////////////////////////////////////// 
 
-
+export interface Digimons {
+    name: string;
+    img: string;
+}
