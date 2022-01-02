@@ -1,9 +1,5 @@
-import { digimonURL } from '../lib';
+import { getdigimons,Digimons } from '../lib';
 
-type DigimonsType = {
-  name: string;
-  img: string;
-};
 
 export default async function updateOutput() {
   const Digimons = await getdigimons();
@@ -14,7 +10,7 @@ export default async function updateOutput() {
   }
 }
 
-function layoutdigimons(digimons: DigimonsType[]) {
+function layoutdigimons(digimons: Digimons[]) {
   let d =0;
   const items = digimons.map(({name, img }) => {
     d++;
@@ -43,12 +39,6 @@ function layoutdigimons(digimons: DigimonsType[]) {
   });
   let productsHtml = `<ul>${items.join('')}</ul>`;
   return productsHtml;
-}
-
-async function getdigimons(): Promise<DigimonsType[]> {
-  const response: Response = await fetch(digimonURL);
-  const digimons: DigimonsType[] = await response.json();
-  return digimons;
 }
 
 
